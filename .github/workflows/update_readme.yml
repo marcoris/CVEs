@@ -23,8 +23,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Update README
       run: |
-        ls -la
-        ls -la "${{ github.workspace }}"
         chmod +x "${{ github.workspace }}/update_readme.sh"
         "${{ github.workspace }}/update_readme.sh"
     - name: Update resources
